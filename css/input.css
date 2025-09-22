@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@import "./style.css";
+
+@font-face {
+  font-family: 'jetbrains-mono';
+  src: url('./../fonts/JetBrainsMono.ttf');
+}
+
+@source './../*.html';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-body: "Roboto", sans-serif;
+  --font-title: "Roboto", sans-serif;
+  --font-code-snippet: "jetbrains-mono", sans-serif;
+  --color-woodsmoke-50: #fafafaff;
+  --color-woodsmoke-100: #c8c8c8ff;
+  --color-woodsmoke-200: #a0a0a0ff;
+  --color-woodsmoke-300: #828282ff;
+  --color-woodsmoke-400: #727272ff;
+  --color-woodsmoke-500: #626262ff;
+  --color-woodsmoke-600: #525252ff;
+  --color-woodsmoke-700: #424242ff;
+  --color-woodsmoke-800: #333333ff;
+  --color-woodsmoke-900: #252525ff;
+  --color-woodsmoke-950: #181818ff;
+  --color-light-50: #fefefeff;
+  --color-light-100: #f4f4f4ff;
+  --color-light-200: #eaeaeaff;
+  --color-light-300: #e0e0e0ff;
+  --color-light-400: #d6d6d6ff;
+  --color-light-500: #ccccccff;
+  --color-light-600: #c2c2c2ff;
+  --color-light-700: #b8b8b8ff;
+  --color-light-800: #aeaeaeff;
+  --color-light-900: #a4a4a4ff;
+  --color-light-950: #9a9a9aff;
+}

@@ -1,0 +1,12 @@
+html {
+  @apply font-body dark:scheme-dark;
+}
+
+body {
+  @apply bg-light-50 dark:bg-woodsmoke-950;
+}
+
+button,
+.button {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2.5 font-medium transition-all;
+}
