@@ -3,8 +3,8 @@
 @import "./style.css";
 
 @font-face {
-  font-family: 'jetbrains-mono';
-  src: url('./../fonts/JetBrainsMono.ttf');
+  font-family: "jetbrains-mono";
+  src: url("./../fonts/JetBrainsMono.ttf");
 }
 
 @source './../*.html';
@@ -37,4 +37,18 @@
   --color-light-800: #aeaeaeff;
   --color-light-900: #a4a4a4ff;
   --color-light-950: #9a9a9aff;
+  --shadow-light-effect:
+    1px 0px 2px rgba(250, 250, 250, 0.15),
+    4px 0px 4px rgba(250, 250, 250, 0.13),
+    10px 0px 6px rgba(250, 250, 250, 0.08),
+    18px 0px 7px rgba(250, 250, 250, 0.02), 28px 0px 8px rgba(250, 250, 250, 0);
+  --shadow-text-shadow-button: 0px 1px 0.699999988079071px rgba(24, 24, 24, 0.2);
+  --shadow-line-shadow-default: 0px 0.25px 0px rgba(194, 194, 194, 0.15);
+  --shadow-light-effect:
+    1px 0px 2px rgba(250, 250, 250, 0.15),
+    4px 0px 4px rgba(250, 250, 250, 0.13),
+    10px 0px 6px rgba(250, 250, 250, 0.08),
+    18px 0px 7px rgba(250, 250, 250, 0.02), 28px 0px 8px rgba(250, 250, 250, 0);
+  --shadow-text-shadow-button: 0px 1px 0.699999988079071px rgba(24, 24, 24, 0.2);
+  --shadow-line-shadow-default: 0px 0.25px 0px rgba(194, 194, 194, 0.15);
 }
