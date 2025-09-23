@@ -13,7 +13,7 @@ button,
 
 button.primary,
 .button.primary {
-  @apply bg-woodsmoke-900 hover:bg-woodsmoke-800 border-woodsmoke-400 text-shadow-button border-t-[0.76px] shadow-[0_14px_0_0_rgba(254,254,254,.01)_inset] *:bg-[linear-gradient(180deg,#FAFAFA_90.22%,#BEBEBE_80.14%)] *:[-webkit-text-fill-color:transparent] [&_span]:bg-clip-text;
+  @apply bg-woodsmoke-900 hover:bg-woodsmoke-800 border-woodsmoke-400 *:drop-shadow-button-text border-t-[0.76px] shadow-[0_14px_0_0_rgba(254,254,254,.01)_inset] *:bg-[linear-gradient(180deg,#FAFAFA_31.22%,#BEBEBE_182.14%)] *:[-webkit-text-fill-color:transparent] [&_span]:bg-clip-text;
 }
 
 button.secondary,

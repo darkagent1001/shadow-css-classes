@@ -16,8 +16,8 @@
   --font-body: "Roboto", sans-serif;
   --font-title: "Roboto", sans-serif;
   --font-code-snippet: "jetbrains-mono", sans-serif;
-  --color-dimmed-black: #8D8D8D;
-  --color-dimmed-white: #B9B9B9;
+  --color-dimmed-black: #8d8d8d;
+  --color-dimmed-white: #b9b9b9;
   --color-woodsmoke-50: #fafafaff;
   --color-woodsmoke-100: #c8c8c8ff;
   --color-woodsmoke-200: #a0a0a0ff;
@@ -45,6 +45,6 @@
     4px 0px 4px rgba(250, 250, 250, 0.13),
     10px 0px 6px rgba(250, 250, 250, 0.08),
     18px 0px 7px rgba(250, 250, 250, 0.02), 28px 0px 8px rgba(250, 250, 250, 0);
-  --text-shadow-button: 0px 1px 0.699999988079071px rgba(24, 24, 24, 0.2);
+  --drop-shadow-button-text: 0px 1px 0.699999988079071px rgba(24, 24, 24, 0.2);
   --shadow-line-default: 0px 0.25px 0px rgba(194, 194, 194, 0.15);
 }
