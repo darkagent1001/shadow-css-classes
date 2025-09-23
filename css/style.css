@@ -1,5 +1,5 @@
 html {
-  @apply font-body dark:scheme-dark;
+  @apply font-body scheme-only-dark;
 }
 
 body {
@@ -8,5 +8,69 @@ body {
 
 button,
 .button {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2.5 font-medium transition-all;
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-3 py-2.5 font-medium transition-all select-none [&_svg]:size-5;
+}
+
+button.primary,
+.button.primary {
+  @apply bg-woodsmoke-900 hover:bg-woodsmoke-800 border-woodsmoke-400 text-shadow-button border-t-[0.76px] shadow-[0_14px_0_0_rgba(254,254,254,.01)_inset] *:bg-[linear-gradient(180deg,#FAFAFA_90.22%,#BEBEBE_80.14%)] *:[-webkit-text-fill-color:transparent] [&_span]:bg-clip-text;
+}
+
+button.secondary,
+.button.secondary {
+  @apply text-woodsmoke-950 dark:text-woodsmoke-50 border-light-400 dark:border-woodsmoke-600 hover:bg-light-100 dark:hover:bg-woodsmoke-800 border;
+}
+
+button.sm,
+.button.sm {
+  @apply gap-1.5 px-2.5 py-2 text-sm [&_svg]:size-4;
+}
+
+button.xs,
+.button.xs {
+  @apply gap-1 px-2.5 py-2 text-xs [&_svg]:size-3.5;
+}
+
+hr {
+  @apply shadow-line-default rounded-full dark:border-black;
+}
+
+.number-square {
+  @apply shadow-line-default font-code-snippet inline-grid size-8 place-content-center rounded-lg border border-black text-center align-middle text-xs;
+}
+
+.form-input {
+  @apply border-light-400 dark:border-woodsmoke-600 placeholder:text-dimmed-theme border p-2.5;
+}
+
+.code-snippet {
+  @apply bg-light-50 dark:bg-woodsmoke-950 rounded-xl;
+}
+
+.code-heading {
+  @apply border-light-400 dark:shadow-line-default border-b px-3 dark:border-black;
+}
+
+.code-content {
+  @apply p-1 pt-3;
+}
+
+.code-syntax {
+  @apply bg-woodsmoke-900 border-woodsmoke-600 border-t-[0.5px];
+}
+
+.snippet-tab {
+  @apply text-dimmed-theme hover:text-woodsmoke-950 dark:hover:text-woodsmoke-50 relative inline-flex items-center gap-4 py-3.5;
+}
+
+.snippet-tab.active {
+  @apply text-woodsmoke-950 dark:text-woodsmoke-50;
+}
+
+.snippet-tab.active::after {
+  @apply border-woodsmoke-950 dark:border-woodsmoke-50 absolute top-full left-0 w-full rounded-full border-b shadow-[0_-1px_2px_rgba(250,250,250,0.15),0_-4px_4px_rgba(250,250,250,0.13),0_-10px_6px_rgba(250,250,250,0.08),0_-10px_6px_rgba(250,250,250,0.08),0_-18px_7px_rgba(250,250,250,0.02),0_-28px_8px_rgba(250,250,250,0.00)] content-[''];
+}
+
+@utility text-dimmed-theme {
+  @apply text-dimmed-black dark:text-dimmed-white;
 }
