@@ -71,6 +71,19 @@ hr {
   @apply border-woodsmoke-950 dark:border-woodsmoke-50 absolute top-full left-0 w-full rounded-full border-b shadow-[0_-1px_2px_rgba(250,250,250,0.15),0_-4px_4px_rgba(250,250,250,0.13),0_-10px_6px_rgba(250,250,250,0.08),0_-10px_6px_rgba(250,250,250,0.08),0_-18px_7px_rgba(250,250,250,0.02),0_-28px_8px_rgba(250,250,250,0.00)] content-[''];
 }
 
+.checkbox {
+  @apply border-light-400 after:drop-shadow-button-text checked:border-woodsmoke-950 dark:checked:border-woodsmoke-900 checked:bg-woodsmoke-950 dark:checked:bg-woodsmoke-900 dark:border-woodsmoke-600 relative size-5 appearance-none rounded-md border transition-all outline-none after:absolute after:top-2/4 after:left-2/4 after:size-3.5 after:-translate-2/4 after:opacity-0 after:transition-all checked:shadow-[0_7px_0_0_rgba(254,254,254,0.01)_inset];
+}
+
+.checkbox:checked::after {
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.6905 5.77665C20.09 6.15799 20.1047 6.79098 19.7234 7.19048L9.22336 18.1905C9.03745 18.3852 8.78086 18.4968 8.51163 18.4999C8.2424 18.5031 7.98328 18.3975 7.79289 18.2071L4.29289 14.7071C3.90237 14.3166 3.90237 13.6834 4.29289 13.2929C4.68342 12.9024 5.31658 12.9024 5.70711 13.2929L8.48336 16.0692L18.2766 5.80953C18.658 5.41003 19.291 5.39531 19.6905 5.77665Z" fill="currentColor"/></svg>');
+  @apply text-woodsmoke-50 bg-[linear-gradient(180deg,#FAFAFA_31.22%,#BEBEBE_83.57%)] mask-contain mask-center mask-no-repeat opacity-100 content-[''];
+}
+
+.checkbox.sm {
+  @apply size-4 rounded-sm after:size-2.5;
+}
+
 @utility text-dimmed-theme {
   @apply text-dimmed-black dark:text-dimmed-white;
 }
